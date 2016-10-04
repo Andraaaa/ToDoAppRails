@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #2196F3;
+    color: #fff;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    margin: 12% auto;
+    width: 75%;
+    background: #BBDEFB;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.todo-title {
+    font-size: 60px;
+}
+
+.todo-title a {
+    color: #1976D2;
+    transition: color .3s ease-in-out;
+}
+
+.todo-title a:hover {
+    color: #1948d2;
+}
+
+.todo-sub-title {
+    font-size: 35px;
+    color: #616161;
+    border-bottom: 1px solid #616161;
+    padding: 12px;
+}
+
+.navigation {
+    display: block;
+    padding: 12px 14px;
+    background: #1976D2;
+    transition: background .3s ease-in-out;
+    margin-top: 20px;
+}
+
+.navigation a {
+    color: #fff;
+}
+
+.navigation:hover {
+    background: #1948d2;
+}
+
+label {
+    font-size: 25px;
+    color: #1948d2;
+}
+
+input[type="submit"] {
+    background-color: #1948d2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 75%;
+    height: 50px;
+    border: none;
+    background-color: #bbcefb;
+    outline-color: #1948d2;
+    font-size: 35px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #616161;
+}
+
+textarea {
+    width: 75%;
+    height: 50px;
+    border: none;
+    background-color: #bbcefb;
+    outline-color: #1948d2;
+    font-size: 35px;
+    padding: 12px;
+    resize: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    color: #616161;
+    font-size: 25px;
+    display: block;
+    margin-top: 20px;
+}
+
+.complete {
+    border-top: 1px solid rgba(250,250,250, .3);
+    font-size: 25px;
+}
+
+.trash {
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(250,250,250, .3);
+    font-size: 25px;
+}
+
+.todo-item p {
+    padding: 20px;
+    font-size: 35px;
+}
+
+.todo-list-title {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+.todo-lisy-sub-title {
+    font-size: 30px;
+}

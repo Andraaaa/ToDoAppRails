@@ -1,13 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @todo_list.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
+<h2 class="todo-list-title">
+    <%= @todo_list.title %></h2>
+</h2>
+<p class="todo-list-sub-title">
+    <%= @todo_list.description %></p>
 </p>
 
 <div id="todo-wrapper">
@@ -17,5 +14,8 @@
     </div>
 </div>
 
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<div class="navigation">
+    <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+    <%= link_to 'Delete', todo_list_path(@todo_list), method: :delete, data: { confirm: "Are you sure?" } %> |
+    <%= link_to 'Back', todo_lists_path %>  
+</div>
